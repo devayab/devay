@@ -3264,6 +3264,7 @@ input, select, textarea {
 					letter-spacing: 0.175em;
 					line-height: 2.5;
 					text-transform: uppercase;
+					color: white;
 				}
 
 				#wrapper section > header ul.actions {
