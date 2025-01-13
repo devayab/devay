@@ -32,9 +32,11 @@
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
 						</header>
+						<!--
 						<div class="content">
 							<span class="image fill" data-position="center"><img src="images/intro.jpeg" alt="" /></span>
 						</div>
+						-->
 					</section>
 
 				<!-- Section -->
@@ -87,17 +89,31 @@
 							Är du redo att ta steget mot en framgångsrik digital transformation? Devay är din pålitliga partner som kan leda dig genom denna resa, oavsett om du är en CEO, CTO, CIO, CFO eller Produktchef på jakt efter expertis inom mjukvaruutveckling.
 							<div>
 								<h2>Våra erbjudanden:</h2>
-						<ul>
-							<li>
-								<strong>Strategisk Rådgivning:</strong> Utöver tekniska lösningar arbetar vi också nära dig för att utveckla en strategi som passar din organisations unika behov. Våra erfarna konsulter bistår dig genom hela processen, från analys till implementering.
-							</li>
-							<li>
-								<strong>Operativt Genomförande:</strong> Vi förstår vikten av att inte bara ha en strategi utan också att kunna genomföra den på ett smidigt sätt. Våra konsulter är experter på att hitta enkla och hållbara lösningar på utmaningar och möjligheter för att omsätta din vision i praktiken.
-							</li>
-							<li>
-								<strong>Flexibla Konsultinsatser:</strong> Oavsett om du behöver kortvarig expertis eller långsiktig support, är vi här för att hjälpa till. Vi kan börja arbeta med dig redan i konceptfasen för att säkerställa att din vision blir verklighet och att slutresultatet överträffar dina förväntningar.
-							</li>
-						</ul>
+								<button type="button" class="collapsible">Mjukvaruutveckling</button>
+								<div class="collapsible-content">
+  									<p>Våra experter erbjuder expertis inom hela mjukvaruutvecklingsprocessen, från exempelvis implementation, vidareutveckling och optimering av lösningar till kravanalys och systemdesign. Vi skapar skräddarsydda och tekniskt hållbara system som möter era specifika affärsbehov.</p> 
+								</div>
+								
+								<button type="button" class="collapsible">Teknisk Due Diligence</button>
+								<div class="collapsible-content">
+  									<p>Vi hjälper dig att bedöma tekniska risker och möjligheter, från affärsidéer till etablerade lösningar. Vår tekniska due diligence säkerställer att de tekniska lösningarna du väljer är hållbara och ger maximal värde för din verksamhet.</p> 
+								</div>
+
+								<button type="button" class="collapsible">Projektledning</button>
+								<div class="collapsible-content">
+  									<p>Led ditt projekt till framgång med strukturerad planering och tydliga kravspecifikationer. Våra projektledare arbetar nära dig för att säkerställa att projektet hålls på rätt spår och levereras enligt dina förväntningar, medan vi tillsammans definierar de krav och målsättningar som styr hela genomförandet.</p> 
+								</div>
+
+								<button type="button" class="collapsible">Expertstöd mot Leverantörer</button>
+								<div class="collapsible-content">
+  									<p>Vi fungerar som en länk mellan din organisation och externa leverantörer och erbjuder expertstöd för att säkerställa att leveranser sker enligt uppsatta mål och kvalitetskrav.</p> 
+								</div>
+
+								<button type="button" class="collapsible">Strategisk Rådgivning</button>
+								<div class="collapsible-content">
+  									<p>Utöver tekniska lösningar arbetar vi också nära dig för att utveckla en strategi som passar din organisations unika behov. Våra erfarna konsulter bistår dig genom hela processen, från analys till implementering.</p> 
+								</div>
+								
 						<h2>Vårt Åtagande:</h2>
 						<ul>
 							<li>
@@ -172,6 +188,48 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
+				
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+				    this.classList.toggle("active");
+				    var content = this.nextElementSibling;
+				    if (content.style.display === "block") {
+				      content.style.display = "none";
+				    } else {
+				      content.style.display = "block";
+				    }
+				  });
+				}
+			</script>
+			<style>
+			.collapsible {
+			  background-color: #007bff; /* Blue by default */
+			  color: white;
+			  cursor: pointer;
+			  padding: 18px;
+			  width: 100%;
+			  border: none;
+			  text-align: left;
+			  outline: none;
+			  font-size: 15px;
+			  transition: background-color 0.3s; /* Smooth transition for background color */
+			  margin-bottom: 10px; /* Add space between the buttons */
+			}
+			
+			.active, .collapsible:hover {
+			  background-color: #0056b3; /* Darker blue when hovered or active */
+			}
+			
+			.collapsible-content {
+			  padding: 0 18px;
+			  display: none;
+			  overflow: hidden;
+			  background-color: #f1f1f1; /* Keep the content background the same */
+			}
+			</style>
 
 	</body>
 </html>
