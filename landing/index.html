@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Devay</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Devay AB" />
+	<meta name="keywords" content="Devay,consulting" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Hero -->
+		<section class="intro">
+			<header>
+				<h1>Devay</h1>
+				<p>Accelerera din digitala transformation med rätt teknisk partner.</p>
+			</header>
+
+			<div class="content">
+				<span class="image fill" data-position="center">
+					<img src="../images/coffee_white.png" alt="" />
+				</span>
+			</div>
+		</section>
+
+		<!-- Lead Form Section -->
+		<section>
+			<header>
+				<h2>Boka ett kostnadsfritt möte</h2>
+			</header>
+
+			<div class="content">
+
+				<p>
+					Fyll i formuläret nedan så kontaktar vi dig för ett första samtal.
+				</p>
+
+				<form id="lead-form">
+
+					<div class="fields">
+
+						<div class="field half">
+							<label for="name">Namn</label>
+							<input type="text" name="name" id="name" required />
+						</div>
+
+						<div class="field half">
+							<label for="company">Företag</label>
+							<input type="text" name="company" id="company" />
+						</div>
+
+						<div class="field">
+							<label for="email">E-post</label>
+							<input type="email" name="email" id="email" required />
+						</div>
+
+						<div class="field">
+							<label for="message">Hur kan vi hjälpa dig?</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+
+						<!-- Hidden UTM fields -->
+						<input type="hidden" name="utm_source">
+						<input type="hidden" name="utm_medium">
+						<input type="hidden" name="utm_campaign">
+						<input type="hidden" name="utm_content">
+						<!-- <input type="hidden" name="utm_term">
+						<input type="hidden" name="li_fat_id"> -->
+
+					</div>
+
+					<ul class="actions">
+						<li><button type="submit" class="primary">Skicka</button></li>
+					</ul>
+
+				</form>
+
+				<p id="form-success" style="display:none; margin-top:20px;">
+					Tack! Vi återkommer inom kort.
+				</p>
+
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Cookie banner -->
+	<div id="cookie-banner" style="
+			position: fixed;
+			bottom: 18px;
+			left: 18px;
+			right: 18px;
+			max-width: 960px;
+			margin: 0 auto;
+			background: rgba(17,17,17,0.95);
+			color: #fff;
+			padding: 16px 18px;
+			display: none;
+			z-index: 9999;
+			font-family: sans-serif;
+			border-radius: 10px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+		">
+		<div style="display:flex; gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+			<p style="margin:0; font-size: 14px; line-height:1.4; flex: 1 1 420px;">
+				Vi använder cookies och lokal lagring för marknadsföring och analys. Du kan acceptera eller avvisa
+				marknadsföringsspårning.
+			</p>
+
+			<div style="display:flex; gap:10px; flex: 0 0 auto;">
+				<button id="accept-marketing" style="
+				background: #C9A227;
+				color: #111;
+				border: none;
+				padding: 10px 14px;
+				border-radius: 8px;
+				cursor: pointer;
+				font-weight: 700;
+				">Acceptera</button>
+
+				<button id="reject-marketing" style="
+				background: #E5E2DD;
+				color: #111111;
+				border: 1px solid #CFCAC2;
+				padding: 10px 14px;
+				border-radius: 8px;
+				cursor: pointer;
+				">Neka</button>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrolly.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+	<script src="../assets/js/form-inject.js"></script>
+	<script src="../assets/js/consent.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const form = document.getElementById("lead-form");
+			const successMsg = document.getElementById("form-success");
+
+			form.addEventListener("submit", function (e) {
+				e.preventDefault(); // stop page reload
+
+				successMsg.style.display = "block";
+				form.reset();
+			});
+		});
+	</script>
+
+
+
+	<style>
+		.collapsible {
+			background-color: #f2f2f2;
+			color: black;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: background-color 0.3s;
+			display: flex;
+			align-items: center;
+		}
+
+		.active,
+		.collapsible:hover {
+			background-color: #d9d9d9;
+		}
+
+		.collapsible-content {
+			padding: 10px 18px;
+			display: none;
+			overflow: hidden;
+			background-color: #fafafa;
+		}
+
+		div.collapsible-container {
+			margin-top: -10px !important;
+			margin-bottom: 20px !important;
+		}
+	</style>
+
+</body>
+
+</html>
