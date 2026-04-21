@@ -305,6 +305,10 @@ h1, h2, h3, h4 {
   }
 }
 
+.hero--revealed .hero-img-hover {
+  opacity: 1;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;

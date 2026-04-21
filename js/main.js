@@ -203,4 +203,12 @@ window.loadMap = loadMap;
     robot.addEventListener('mouseenter', triggerRobot);
     robot.addEventListener('click',      triggerRobot);
   }
+
+  // Hero tap-to-reveal on touch devices
+  var hero = document.querySelector('.hero');
+  if (hero && window.matchMedia('(hover: none)').matches) {
+    hero.addEventListener('click', function () {
+      hero.classList.toggle('hero--revealed');
+    });
+  }
 })();
