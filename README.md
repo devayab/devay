@@ -6,7 +6,8 @@ Webbplats för [Devay AB](https://www.devay.se) — ett IT-konsultbolag i Karlsk
 
 - Vanilla HTML/CSS/JS — ingen build-pipeline
 - GitHub Pages (repo: `devayab/devay`) — automatisk deploy vid push till `main`
-- Cloudflare — DNS och CDN framför GitHub Pages
+- Cloudflare — DNS (nameservers delegerade från GoDaddy, proxy avstängd)
+- GoDaddy — domänregistrar för devay.se
 - Domän: `devay.se` (apex) och `www.devay.se`
 
 ## Struktur
