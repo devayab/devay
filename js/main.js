@@ -119,18 +119,18 @@
 
 /* ── 5. GDPR-KARTA ─────────────────────────────────── */
 
-function loadMap() {
-  const consent = document.getElementById('map-consent');
-  const iframe  = document.getElementById('map-iframe');
-
-  if (consent) consent.style.display = 'none';
-  if (iframe) {
-    iframe.src = iframe.getAttribute('data-src') || '';
-    iframe.style.display = 'block';
-  }
+var mapBtn = document.querySelector('.map-consent-btn');
+if (mapBtn) {
+  mapBtn.addEventListener('click', function () {
+    var consent = document.getElementById('map-consent');
+    var iframe  = document.getElementById('map-iframe');
+    if (consent) consent.style.display = 'none';
+    if (iframe) {
+      iframe.src = iframe.getAttribute('data-src') || '';
+      iframe.classList.add('map-iframe--active');
+    }
+  });
 }
-
-window.loadMap = loadMap;
 
 
 /* ── 6. TAP/HOVER-ANIMATIONER (återspelningsbara) ─── */
