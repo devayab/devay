@@ -35,19 +35,24 @@ python3 -m http.server 8000
 # Öppna http://localhost:8000
 ```
 
-## Deploya
+## Git-flöde
+
+Jobba alltid på `dev`-branchen. Merga till `main` och pusha till prod när du är klar:
 
 ```bash
-# Pusha till produktion (devayab/devay)
-git push prod main
+# Jobba och committa på dev
+git add ... && git commit -m "..."
 
-# Pusha till test (origin)
-git push origin main
+# Deploya till produktion
+git checkout main
+git merge dev
+git push prod main
+git checkout dev
 ```
 
 Remotes:
-- `origin` — testrepo
 - `prod` — `https://github.com/devayab/devay` (live på devay.se)
+- `origin` — gammalt testrepo (devaytech), används ej aktivt
 
 ## Kontakt
 
