@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Sidan finns inte — Devay AB</title>
+  <meta name="robots" content="noindex">
+
+  <!-- Favicons — absoluta sökvägar: GitHub Pages visar 404-sidan på vilken URL som helst -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+  <link rel="stylesheet" href="/css/style.css?v=20260926">
+
+  <style>
+    .notfound-page {
+      background: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .notfound {
+      flex: 1;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 10rem 1.5rem 6rem;
+    }
+    .notfound-code {
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--color-primary);
+      margin-bottom: 0.75rem;
+    }
+    .notfound h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      font-weight: 800;
+      color: var(--color-text);
+      letter-spacing: -0.5px;
+      margin-bottom: 1rem;
+    }
+    .notfound p {
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+    .notfound-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .notfound-actions .btn-link {
+      color: var(--color-primary);
+    }
+    @media (prefers-color-scheme: dark) {
+      .notfound-page { background: #141412; }
+      .notfound h1 { color: #f0ede8; }
+      .notfound p { color: #cac6c0; }
+    }
+  </style>
+</head>
+<body class="notfound-page">
+
+  <nav class="nav scrolled" aria-label="Huvudnavigation">
+    <a href="/" class="nav-logo" aria-label="Devay — Till startsidan">
+      <picture>
+        <source srcset="/images/devay-logo-white.webp" type="image/webp" media="(prefers-color-scheme: dark)">
+        <source srcset="/images/devay-logo-white.png" media="(prefers-color-scheme: dark)">
+        <source srcset="/images/devay-logo.webp" type="image/webp">
+        <img src="/images/devay-logo.png" alt="Devay" width="147" height="28">
+      </picture>
+    </a>
+    <div class="nav-links">
+      <a href="/#tjanster" class="nav-link">Tjänster</a>
+      <a href="/#om-oss" class="nav-link">Om oss</a>
+      <a href="/#case" class="nav-link">Case</a>
+      <a href="/#kontakt" class="nav-link">Kontakt</a>
+    </div>
+    <a href="/#kontakt" class="nav-cta">Kontakta oss</a>
+  </nav>
+
+  <main class="notfound">
+    <p class="notfound-code">404</p>
+    <h1>Hoppsan, här fanns ingenting</h1>
+    <p>Sidan du letar efter har flyttat eller finns inte längre. Gå tillbaka till startsidan, eller hör av dig direkt, så hjälper vi dig.</p>
+    <div class="notfound-actions">
+      <a href="/" class="btn-primary">Till startsidan</a>
+      <a href="/#kontakt" class="btn-link">Kontakta oss &rarr;</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom footer-bottom--slim">
+      <p>&copy; 2026 Devay AB &middot; Org.nr: 559456-9799 &middot; Karlskrona, Sverige</p>
+    </div>
+  </footer>
+
+</body>
+</html>

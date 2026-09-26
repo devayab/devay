@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.devay.se/sitemap.xml
+Sitemap: https://devay.se/sitemap.xml
