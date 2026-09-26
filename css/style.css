@@ -763,10 +763,6 @@ h1, h2, h3, h4 {
   filter: grayscale(0%) brightness(1.03) saturate(0.9);
 }
 
-.culture-photo--vivid:hover img {
-  filter: grayscale(0%) brightness(0.92) saturate(1.35) contrast(1.1);
-}
-
 .culture-photo--contain img {
   object-fit: contain;
   background: #fff;
